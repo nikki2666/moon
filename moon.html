@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="main"></div>
+<style>
+ *{
+    background: #62306D;
+   }
+.main{
+    height: 120px;
+    width: 280px;
+    border-radius:100px; 
+    background:#F7EC7D;    
+    margin: 90 auto;
+     }
+.main::before{
+        content:'';
+        height:80px;
+        width:80px;
+        background:#62306D;
+        position: absolute;
+        margin: 20px 20px ;
+        border-radius: 50%;
+}
+.main::after{
+     content:'';
+     height:30px;
+     width:30px;
+     background:#62306D;
+     position: absolute;
+     margin: 40px 50px;
+     border-radius: 50%;
+     box-shadow:-8px 5px 0 2.5px #F7EC7D } 
+</style>
+</body>
+</html>
